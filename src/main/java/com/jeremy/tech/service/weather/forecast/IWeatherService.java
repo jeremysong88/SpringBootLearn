@@ -2,6 +2,8 @@ package com.jeremy.tech.service.weather.forecast;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.io.IOException;
+
 /**
  * Created by jeremysong on 5/24/2017.
  */

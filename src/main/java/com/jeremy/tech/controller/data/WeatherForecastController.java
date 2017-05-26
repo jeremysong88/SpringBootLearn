@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by jeremysong on 5/25/2017.
  */
 @RestController
-
 @RequestMapping("/weatherForecast")
-public class WeatherForcastController {
+public class WeatherForecastController {
 
     @Autowired
     private IWeatherService weatherService;
@@ -21,5 +20,10 @@ public class WeatherForcastController {
     @RequestMapping("/15daysByAreaName")
     public JSONObject query15DaysWeatherByAreaName(@RequestParam("area") String areaName) {
         return weatherService.query15DaysWeatherByAreaName(areaName);
+    }
+
+    @RequestMapping("/queryAreaId")
+    public JSONObject queryAreaIdByAreaName(@RequestParam("area") String areaName) {
+        return weatherService.queryAreaIdByAreaName(areaName);
     }
 }
