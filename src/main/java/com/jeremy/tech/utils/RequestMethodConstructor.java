@@ -26,16 +26,33 @@ public class RequestMethodConstructor {
 
     private CloseableHttpResponse response;
 
-    public HttpGet createGetMethod(String uri) {
+    /**
+     * 指定使用GET方法请求目标URI
+     *
+     * @param uri 目标URI
+     */
+    public void createGetMethod(String uri) {
         this.request = new HttpGet(uri);
-        return (HttpGet) request;
     }
 
-    public HttpPost createPostMethod(String uri) {
+    /**
+     * 指定使用POST方法请求目标URI
+     *
+     * @param uri 目标URI
+     */
+    public void createPostMethod(String uri) {
         this.request = new HttpPost(uri);
-        return (HttpPost) request;
     }
 
+    /**
+     * 给请求添加参数，此方法在对同一个实例重复调用时必须再次使用{@link #createGetMethod(String)}，
+     * 或{@link #createPostMethod(String)}方法重新生成Http请求对象。
+     *
+     * @param pairs 待添加的键值对参数
+     * @throws UnsupportedEncodingException
+     * @see #createGetMethod(String)
+     * @see #createPostMethod(String)
+     */
     public void setParameters(List<NameValuePair> pairs) throws UnsupportedEncodingException {
         if (request instanceof HttpGet) {
             String oldUri = request.getURI().toString();
@@ -49,6 +66,12 @@ public class RequestMethodConstructor {
         }
     }
 
+    /**
+     * 以key=value的方式用&拼接GET请求参数
+     *
+     * @param pairs
+     * @return
+     */
     private String buildGetRequestParamString(List<NameValuePair> pairs) {
         StringBuffer sb = new StringBuffer();
         if (pairs != null && pairs.size() > 0) {
@@ -72,14 +95,31 @@ public class RequestMethodConstructor {
         request.setHeaders(headers);
     }
 
+    /**
+     * 执行Http请求
+     *
+     * @throws IOException
+     */
     public void execute() throws IOException {
         response = client.execute(request);
     }
 
+    /**
+     * 返回Http请求执行后的相应对象，此方法在没有执行{@link #execute()}之前返回为null
+     *
+     * @return 请求响应
+     * @see #execute()
+     */
     public CloseableHttpResponse getResponse() {
         return response;
     }
 
+    /**
+     * 获取通过{@link #createGetMethod(String)}方法创建的HttpGet对象
+     *
+     * @return
+     * @see #createGetMethod(String)
+     */
     public HttpGet getHttpGet() {
         if (request instanceof HttpGet) {
             return (HttpGet) request;
@@ -87,6 +127,12 @@ public class RequestMethodConstructor {
         return null;
     }
 
+    /**
+     * 获取通过{@link #createPostMethod(String)}方法创建的HttpPost对象
+     *
+     * @return
+     * @see #createPostMethod(String)
+     */
     public HttpPost getHttpPost() {
         if (request instanceof HttpPost) {
             return (HttpPost) request;
@@ -94,6 +140,13 @@ public class RequestMethodConstructor {
         return null;
     }
 
+    /**
+     * 以字符串的形式获取相应结果，此方法在{@link #execute()}执行前调用返回空字符串
+     *
+     * @return
+     * @throws IOException
+     * @see #execute()
+     */
     public String getResponseAsString() throws IOException {
         if (response != null) {
             return EntityUtils.toString(response.getEntity());
