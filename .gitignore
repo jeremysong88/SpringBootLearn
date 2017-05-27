@@ -48,3 +48,4 @@ Temporary Items
 
 # personal ignored directory
 /target
+.idea/workspace.xml
