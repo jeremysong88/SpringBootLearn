@@ -1,12 +1,15 @@
 package com.jeremy.tech.entity;
 
-//import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * Created by jeremysong on 5/28/2017.
  */
-//@Document(collection = "city")
+@Document(collection = "city")
 public class City {
+
+    @Id
     private int id;
     private String county;
     private String province;
