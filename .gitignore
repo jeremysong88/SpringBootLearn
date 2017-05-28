@@ -46,6 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# personal ignored directory
-/target
+# ignore Maven generated target folders
+target
+
+# ignore IDEA files
 .idea/workspace.xml
+
+# Package Files
+*.class
