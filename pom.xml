@@ -19,7 +19,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.3.RELEASE</version>
     </parent>-->
-
+    <!-- 如果不想让此POM继承spring-boot-starter-parent，可以使用如下dependencyManagement的配置 -->
     <dependencyManagement>
         <dependencies>
             <!-- Override Spring Data release train provided by Spring Boot -->
