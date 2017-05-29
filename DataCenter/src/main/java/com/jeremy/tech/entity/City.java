@@ -9,6 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "city")
 public class City {
 
+    /**
+     * ID字段定义为String类型时，Mongo使用自己控制的自增ID，类型为int时，ID完全由用户维护
+     *
+     * @see org.springframework.data.mongodb.core.MongoTemplate#insert(Object)
+     */
     @Id
     private int id;
     private String county;
