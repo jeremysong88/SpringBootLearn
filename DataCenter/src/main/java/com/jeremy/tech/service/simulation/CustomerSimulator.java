@@ -19,11 +19,15 @@ public class CustomerSimulator implements ICustomerSimulation {
     @Autowired
     private CustomerDao customerDao;
 
+    private final int timeoutMillis = 5000;
+
     @Override
     public void createCustomerInfoZHCN(int count) {
         Random random = new Random(System.currentTimeMillis());
-        try {
-            while (count > 0) {
+        long start = System.currentTimeMillis();
+        int added = 0;
+        while (added < count) {
+            try {
                 Customer customer = new Customer();
                 String firstName = NameCreator.getInstance().getFirstNameByZHCN();
                 String lastName = NameCreator.getInstance().getLastNameByZHCN();
@@ -40,10 +44,18 @@ public class CustomerSimulator implements ICustomerSimulation {
                 customer.setSex(random.nextInt(2));
                 customer.setLevel(random.nextInt(8) + 1);
                 customerDao.insertCustomer(customer);
-                count--;
+
+                long now = System.currentTimeMillis();
+                if (now - start >= timeoutMillis) {
+                    System.out.println("Insert customer timeout");
+                    break;
+                } else {
+                    added++;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+                continue;
             }
-        } catch (BadHanyuPinyinOutputFormatCombination badHanyuPinyinOutputFormatCombination) {
-            badHanyuPinyinOutputFormatCombination.printStackTrace();
         }
     }
 }

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37908a94-c6e9-45e6-b071-713873465e1a" name="Default" comment="add weather forecast">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/service/simulation/CustomerSimulator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/service/simulation/ICustomerSimulation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/controller/data/SimulationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/entity/Customer.java" afterPath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/entity/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataCenter/src/test/java/com/jeremy/tech/HanyuToPinyinTest.java" afterPath="$PROJECT_DIR$/DataCenter/src/test/java/com/jeremy/tech/HanyuToPinyinTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/utils/StringUtil.java" afterPath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/utils/StringUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/service/simulation/CustomerSimulator.java" afterPath="$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/service/simulation/CustomerSimulator.java" />
     </list>
     <ignored path="SpringBootLearn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +31,8 @@
       <file leaf-file-name="CustomerSimulator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/service/simulation/CustomerSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.99462366">
-              <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+            <state vertical-scroll-proportion="2.357143">
+              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1309,7 +1303,7 @@
       <workItem from="1496152714806" duration="179000" />
       <workItem from="1496152914197" duration="5266000" />
       <workItem from="1496241098837" duration="1159000" />
-      <workItem from="1496323113777" duration="4306000" />
+      <workItem from="1496323113777" duration="5629000" />
     </task>
     <task id="LOCAL-00001" summary="How to returns a json data">
       <created>1495362291786</created>
@@ -1333,7 +1327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109281000" />
+    <option name="totallyTimeSpent" value="110604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1348,9 +1342,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28460687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30504835" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43189368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34219268" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.78959024" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23523094" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23523094" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25134265" sideWeight="0.5263158" order="0" side_tool="false" content_ui="combo" />
@@ -1755,9 +1749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1852,8 +1844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataCenter/src/main/java/com/jeremy/tech/service/simulation/CustomerSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.99462366">
-          <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        <state vertical-scroll-proportion="2.357143">
+          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
