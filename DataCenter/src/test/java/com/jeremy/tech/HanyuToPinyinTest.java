@@ -1,5 +1,6 @@
 package com.jeremy.tech;
 
+import com.jeremy.tech.utils.StringUtil;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -23,8 +24,8 @@ public class HanyuToPinyinTest {
 
         HanyuPinyinOutputFormat format = new HanyuPinyinOutputFormat();
         format.setCaseType(HanyuPinyinCaseType.LOWERCASE);
-        format.setToneType(HanyuPinyinToneType.WITH_TONE_MARK);
-        format.setVCharType(HanyuPinyinVCharType.WITH_U_UNICODE);
+        format.setToneType(HanyuPinyinToneType.WITHOUT_TONE);
+        format.setVCharType(HanyuPinyinVCharType.WITH_V);
 
         sb.setLength(0);
         pinyin = PinyinHelper.toHanyuPinyinStringArray('宋', format);
@@ -32,5 +33,10 @@ public class HanyuToPinyinTest {
             sb.append(str);
         }
         System.out.println(sb.toString());
+    }
+
+    @Test
+    public void getPinyin() throws BadHanyuPinyinOutputFormatCombination {
+        System.out.println(StringUtil.getPinYin("中国"));
     }
 }

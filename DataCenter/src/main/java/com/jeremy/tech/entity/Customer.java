@@ -18,9 +18,13 @@ public class Customer {
 
     private String firstName;
 
+    private String firstNameCN;
+
     private String middleName;
 
     private String lastName;
+
+    private String lastNameCN;
 
     @Indexed(unique = true)
     private String email;
@@ -49,6 +53,14 @@ public class Customer {
         this.firstName = firstName;
     }
 
+    public String getFirstNameCN() {
+        return firstNameCN;
+    }
+
+    public void setFirstNameCN(String firstNameCN) {
+        this.firstNameCN = firstNameCN;
+    }
+
     public String getMiddleName() {
         return middleName;
     }
@@ -63,6 +75,14 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getLastNameCN() {
+        return lastNameCN;
+    }
+
+    public void setLastNameCN(String lastNameCN) {
+        this.lastNameCN = lastNameCN;
     }
 
     public String getEmail() {
