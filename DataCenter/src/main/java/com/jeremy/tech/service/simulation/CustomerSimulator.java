@@ -4,7 +4,6 @@ import com.jeremy.tech.dao.CustomerDao;
 import com.jeremy.tech.entity.Customer;
 import com.jeremy.tech.utils.NameCreator;
 import com.jeremy.tech.utils.StringUtil;
-import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
