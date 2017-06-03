@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bootstrap/Bootstrap.iml" filepath="$PROJECT_DIR$/Bootstrap/Bootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataCenter/DataCenter.iml" filepath="$PROJECT_DIR$/DataCenter/DataCenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NodeJSLearn/NodeJSLearn.iml" filepath="$PROJECT_DIR$/NodeJSLearn/NodeJSLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootLearn.iml" filepath="$PROJECT_DIR$/SpringBootLearn.iml" />
     </modules>
   </component>
