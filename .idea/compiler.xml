@@ -31,10 +31,18 @@
         <processorPath useClasspath="true" />
         <module name="Bootstrap" />
       </profile>
+      <profile default="false" name="Annotation profile for OrderCenter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="OrderCenter" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Bootstrap" target="1.8" />
       <module name="DataCenter" target="1.8" />
+      <module name="OrderCenter" target="1.8" />
       <module name="SpringBootLearn" target="1.8" />
     </bytecodeTargetLevel>
   </component>

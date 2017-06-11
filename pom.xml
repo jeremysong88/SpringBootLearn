@@ -11,6 +11,7 @@
     <modules>
         <module>DataCenter</module>
         <module>Bootstrap</module>
+        <module>OrderCenter</module>
     </modules>
 
     <!-- Spring Boot  dependency -->
